@@ -77,6 +77,19 @@ form label{
 	flex: 0.8;
 }
 
+form .error{
+	display: flex;
+	flex-direction: row;
+	margin: 35px 15px 35px 15px;
+	padding: 10px 0 10px 0;
+	 justify-content: center;
+	 background-color: hsla(333deg, 100%, 44%, 0.25);
+	 border-radius: 5px;	
+	 font-weight: bold;
+	 display: none;
+	 text-align: center;
+}
+
 form footer{
 	display: flex;
 	flex-direction: row;

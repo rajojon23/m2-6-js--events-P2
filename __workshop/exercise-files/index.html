@@ -15,11 +15,11 @@
 <body>
   <div>
     
-    <form>
+    <form >
       <h1>Signup Form</h1>
       <div class="wrapper">
         <label>Full name:</label>
-        <input type="text"  name="full_name" id="full_name" for="full_name" required/>
+        <input type="text"  name="full_name" id="full_name" for="full_name" autofocus required/>
       </div>
       <div class="wrapper">
         <label>Street address</label>
@@ -27,7 +27,7 @@
       </div>
       <div class="wrapper">
         <label>Email address</label>
-        <input  type="text" for="email" name="email" id="email"  required/>
+        <input  type="email" for="email" name="email" id="email"  required/>
       </div>
       <div class="wrapper">
         <label>Phone number</label>
@@ -45,10 +45,12 @@
         <input type="checkbox"  name="terms" id="terms" for="terms"  required/>
         <label> I agree to the <a href="/">terms of service</a>. </label>
       </div>
-      <div></div>
+      <div class="error">
+          <p class="error_text">Error message here</p>
+      </div>
       <footer>
         <button>Clear</button>
-        <button>Submit</button>
+        <button id="submit">Submit</button>
       </footer>
     </form>
   </div>
