@@ -85,8 +85,32 @@ const staffMembers = [
   },
 ];
 
+
 const getData = (arr, key, val) => {
   // return something
+
+  let new_arr = [];
+
+  staffMembers.forEach((member)=>{
+    if(member[key] == val){
+        new_arr.push(member);
+
+
+      } 
+     else if(key in member.skillLevels) {
+        if(member["skillLevels"][key] >= val){
+          new_arr.push(member);
+        }
+
+      }
+      else{
+        return ; 
+      }
+    
+  });
+
+  return new_arr;
+
 };
 
 // 2. Do a console.log to verify your function.

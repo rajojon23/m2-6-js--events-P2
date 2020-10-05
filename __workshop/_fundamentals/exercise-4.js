@@ -19,6 +19,18 @@ const people = [
 
 function olderPeople(peopleArr, age) {
   // return something
+  let new_arr = [];
+
+  peopleArr.forEach((person)=>{
+  		
+	if(person.age > age) {
+  		new_arr.push(person);		
+	}     	
+      
+	
+  });
+
+  return new_arr;  
 }
 
 // 2. Do a console.log to verify your function.

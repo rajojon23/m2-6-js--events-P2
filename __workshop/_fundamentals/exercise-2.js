@@ -21,6 +21,17 @@ const people = [
 
 function avgAge(peopleArr) {
   // return something
+  let avg = 0;
+  let total = 0;
+  peopleArr.forEach((person) => {
+  	total += person.age;
+  });
+
+  avg = total/peopleArr.length;
+
+
+  return Math.round(avg);
+
 }
 
 // 2. Do a console.log to verify your function.

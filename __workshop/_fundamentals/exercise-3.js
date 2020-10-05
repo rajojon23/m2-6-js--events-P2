@@ -19,6 +19,17 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  let new_arr = [];
+
+  peopleArr.forEach((person)=>{
+  		let full_name = `${person.name.first} ${person.name.middle} ${person.name.last}`;
+      
+      
+  		new_arr.push(full_name.replace(' undefined ',' '));
+  });
+
+  return new_arr;
+
 }
 
 // 2. Do a console.log to verify your function.
